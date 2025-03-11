@@ -19,15 +19,15 @@
         ]
     },
     "dependencies": {
-        "aws-sdk": "^2.849.0",
-        "commander": "^11.0.0",
-        "ini": "^2.0.0"
+        "@aws-sdk/client-sso": "^3.758.0",
+        "commander": "^13.1.0",
+        "ini": "^5.0.0"
     },
     "devDependencies": {
-        "husky": "^8.0.1",
-        "lint-staged": "^13.0.3",
-        "prettier": "^2.2.1",
-        "prettier-plugin-packagejson": "^2.2.10"
+        "husky": "^9.1.7",
+        "lint-staged": "^15.4.3",
+        "prettier": "^3.5.3",
+        "prettier-plugin-packagejson": "^2.5.10"
     },
     "preferGlobal": true,
     "pkg": {

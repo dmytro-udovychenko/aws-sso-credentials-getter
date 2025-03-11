@@ -15,8 +15,8 @@ program.argument("<profile>", "The sso profile you want to set up creds for")
 
 // Define optional flags with values
 program.option(
-    "-cp, --customProfile <value>",
-    "Save the creds under a different profile"
+    "-c, --customProfile <value>",
+    "The sso profile you want to set up creds for"
 )
 program.option(
     "-e, --ecr [region]",
