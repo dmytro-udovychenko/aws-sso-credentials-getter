@@ -4,8 +4,17 @@ SSOcred is a handy cli tool that will grab temporary AWS CLI login credentials f
 
 Why though? Tools like Terraform are currently unable to handle AWS auth via SSO and rely on the Access Key and Secret being in the credentials file.
 
-To install from the directory:
-`npm install -g aws-sso-credentials-getter --include=dev`
+## Install
+
+Sometimes `npm install -g .` / `npm install -g /path/to/repo` can create a link to your working directory, and then `ssocred` may fail at runtime with errors like `ERR_MODULE_NOT_FOUND` (because dependencies are not resolved from a global install).
+
+To install **properly** from a local checkout, pack and install the tarball:
+
+```bash
+cd /path/to/aws-sso-credentials-getter
+npm pack
+npm install -g ./aws-sso-credentials-getter-*.tgz
+```
 
 To use: \
 `ssocred {profile}`
